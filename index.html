@@ -1,91 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SteelMetriXX</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SteelMetriXX</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 </head>
 
 <body>
-  <header>
-    <img src="assets/Logo.svg" alt="Logo" width="" height="">
-    <h1>SteelMetriXX</h1>
-    <div>
-      <nav>
-        <ul>
-          <li><a href="">Главная</a></li>
-          <li>
-            <span>Компетенции</span>
-            <ul>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-            </ul>
-          </li>
-          <li><a href="">О компании</a></li>
-          <li><a href="">Контакты</a></li>
-        </ul>
+  <header class="header container">
+      <img src="./img/Logo.svg" alt="header-logo" class="header-img">
+      <nav class="header-nav nav">
+          <ul class="nav_list">
+              <li class="list_item">Главная</li>
+              <li class="list_item with_arrow">Компетенции</li>
+              <li class="list_item">О компании</li>
+              <li class="list_item">Контакты</li>
+          </ul>
       </nav>
-    </div>
+      <span class="header_number">8 800 302 74 79</span>
+      <div class="burger">
+
+      </div>
   </header>
-  <main>
-    <section>
-      Более 300 реализованных проектов по строительству быстровозводимых объектов
-    </section>
-    <section>
-      <h2>Отрасль</h2>
-      <ul>
-        <li><button>Все</button></li>
-        <li><button>Сельхоз</button></li>
-        <li><button>Логистика</button></li>
-        <li><button>Торговые организации</button></li>
-        <li><button>Промышленность</button></li>
-        <li>
-          <button>Показать все фильтры</button>
-          <img src="" alt="">
-        </li>
-      </ul>
-    </section>
-    <section>
-      <ul>
-        <li><a href="">Завод пегас агро</a></li>
-        <li><a href="">Завод по горячему цинкованию металлоконструкций</a></li>
-        <li><a href="">Торгово-выставочный центр</a></li>
-        <li><a href="">Птичники</a></li>
-        <li><a href="">Казармы</a></li>
-        <li><a href="">Комплекс ангаров</a></li>
-        <li>
-          <a href="">показать еще</a>
-          <img src="" alt="">
-        </li>
-      </ul>
-    </section>
-    <div>
-      Ваше спокойствие от работы с надежным партнером
-    </div>
-    <section>
-      <h2>Лидеры отрасли выбирают нас</h2>
-      <p>В SteelMetriXX мы адаптируем наш подход к потребностям наших клиентов. Независимо от того, начинаете ли вы малый бизнес или являетесь крупной корпорацией, стремящейся расширить свою деятельность, мы — подходящая команда для вас.</p>
-      <ul>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-      </ul>
-    </section>
-    <section>
-      <h2>Поможем реализовать ваш проект</h2>
-      <p>Заполните форму и мы свяжемся с вами в течение рабочего дня. Наши технологи и проектировщики изучат ваши требования, предложат варианты технических решений и обоснуют их возможности и ограничения для принятия оптимального решения. Вы всегда можете получить бесплатную консультацию по телефону 8 800 302-74-79, по почте info@stelmetrixx.ru или в WhatsApp и Telegram.</p>
-      <form action=""></form>
-    </section>
+
+  <main class="main">
+      <h1 class="visually-hidden">SteelMetrixx</h1>
+      <section class="hero container">
+        <h2 class="visually-hidden">Hero</h2>
+        <p class="hero_text">
+            Более 300
+            реализованных проектов
+            по строительству быстровозводимых объектов
+        </p>
+      </section>
+      <section class="industry">
+          <div class="industry_filter container">
+         <h2 class="industry_heading">ОТРАСЛЬ</h2>
+          <ul class="industry_filter_list">
+              <li class="industry_filter_item"><button>Все</button></li>
+              <li class="industry_filter_item"><button>Селькское хозяство</button></li>
+              <li class="industry_filter_item"><button>Логистика и склады</button></li>
+              <li class="industry_filter_item"><button>Торговые организации</button></li>
+              <li class="industry_filter_item"><button>Промышленность</button></li>
+              <li class="industry_filter_item"><button>Спортивные организации</button></li>
+              <li class="industry_filter_item"><button>Проживание и размещение людей</button></li>
+              <li class="industry_filter_item"><button>Энергетика</button></li>
+              <li class="industry_filter_item"><button>Автомобильный бизнес</button></li>
+              <li class="industry_filter_item"><button>Администативные и офисные здания</button></li>
+              <li class="industry_filter_item"><button>Медицина и образование</button></li>
+              <li class="industry_filter_item"><button>Дороги и мосты</button></li>
+              <li class="industry_filter_item"><button>Обронно-промышелнный комплекс</button></li>
+          </ul>
+            <div class="industry_filter_all">
+             <button class="industry_filter_all-btn">Показать все фильтры</button>
+            </div>
+          </div>
+          <div class="industry_cards container">
+              <div class="industry_card">
+                  <img src="./img/pegas.png" alt="pegas">
+                  <h3>Завод Пегас Агро</h3>
+                  <p>20 000 кв.м</p>
+                  <p>пгт. Стройкерамик, Самарская обл.</p>
+              </div>
+              <div class="industry_card">
+                  <img src="./img/zink.png" alt="zink">
+                  <h3>Завод по горячему цинкованию металлоконструкций</h3>
+                  <p>13 000 кв.м</p>
+                  <p>г. Можайск, Московской обл.</p>
+              </div>
+              <div class="industry_card">
+                  <img src="./img/center.png" alt="center">
+                  <h3>Торгово-выставочный центр</h3>
+                  <p>960 кв.м</p>
+                  <p>г. Оренбург</p>
+              </div>
+              <div class="industry_card">
+                  <img src="./img/birds.png" alt="birds">
+                  <h3>Птичники</h3>
+                  <p>12 000 кв.м</p>
+                  <p>с. Потьма, Пензенская обл.</p>
+              </div>
+              <div class="industry_card">
+                  <img src="./img/military.png" alt="millitary">
+                  <h3>Казармы</h3>
+                  <p>3 560  кв.м</p>
+                  <p>Оренбургская обл.</p>
+              </div>
+              <div class="industry_card">
+                  <img src="./img/complex.png" alt="complex">
+                  <h3>Комплекс ангаров</h3>
+                  <p>3 240 кв.м</p>
+                  <p>с. Александровка, Грачевского р-на</p>
+              </div>
+          </div>
+          <div class="industry_cards_all">
+              <button class="industry_cards_all-btn">Показать еще</button>
+          </div>
+      </section>
+      <section class="tagline">
+          <h2 class="tagline_text">
+              Ваше спокойствие от работы с надежным партнером
+          </h2>
+      </section>
+      <section class="partners">
+          <div class="partners_text container">
+              <h2 class="partners_tagline">Лидеры отрасли выбирают нас</h2>
+              <p>В SteelMetriXX мы адаптируем наш подход к потребностям наших клиентов. Независимо от того, начинаете ли вы малый бизнес или являетесь крупной корпорацией, стремящейся расширить свою деятельность, мы — подходящая команда для вас.</p>
+          </div>
+          <div class="partners_cards container">
+              <div class="partners_card">
+                  <img src="./img/partners/blin.png" alt="blin">
+              </div>
+              <div class="partners_card">
+                  <img src="./img/partners/stroi.png" alt="stroi">
+              </div>
+              <div class="partners_card">
+                  <img src="./img/partners/milk.png" alt="milk">
+              </div>
+              <div class="partners_card">
+                  <img src="./img/partners/vektor.png" alt="vektor">
+              </div>
+              <div class="partners_card">
+                  <img src="./img/partners/45.png" alt="45">
+              </div>
+              <div class="partners_card">
+                  <img src="./img/partners/ural.png" alt="ural">
+              </div>
+              <div class="partners_card">
+                  <img src="./img/partners/fsk.png" alt="fsk">
+              </div>
+              <div class="partners_card">
+                  <img src="./img/partners/zastava.png" alt="zastava">
+              </div>
+              <div class="partners_card">
+                  <img src="./img/partners/ferma.png" alt="ferma">
+              </div>
+              <div class="partners_card">
+                  <img src="./img/partners/avto.png" alt="avto">
+              </div>
+          </div>
+      </section>
+      <section class="form container">
+          <div class="form_text">
+              <h2>Поможем реализовать
+                  ваш проект</h2>
+              <p>Заполните форму и мы свяжемся с вами в течение рабочего дня.</p>
+                  <p>Наши технологи и проектировщики
+                  изучат ваши требования, предложат
+                  варианты технических решений и обоснуют их возможности и ограничения
+                  для принятия оптимального решения.</p>
+                  <p>Вы всегда можете получить бесплатную консультацию по телефону <a href="" class="link-no-underline">8 800 302-74-79</a>, по почте <a href="">info@stelmetrixx.ru</a> или в
+                  <a href="">WhatsApp</a> и <a href="">Telegram</a>.</p>
+          </div>
+          <form action="//httpbin.org/post" method="post">
+              <div class="form_item">
+                  <label for="name"></label>
+                  <input
+                          type="text"
+                          name="name"
+                          id="name"
+                          placeholder="Ваше имя*"
+                          required
+                  />
+              </div>
+              <div class="form_item">
+                  <label for="e-mail"></label>
+                  <input
+                          type="text"
+                          name="e-mail"
+                          id="e-mail"
+                          placeholder="E-mail*"
+                          required
+                  />
+              </div>
+              <div class="form_item">
+                  <label for="phone"></label>
+                  <input
+                          type="text"
+                          name="phone"
+                          id="phone"
+                          placeholder="Телефон"
+                          required
+                  />
+              </div>
+              <div class="form_item">
+                  <label for="reg"></label>
+                  <input
+                          type="text"
+                          name="reg"
+                          id="reg"
+                          placeholder="Регион"
+                          required
+                  />
+              </div>
+              <div class="form_item">
+                  <label for="city"></label>
+                  <input
+                          type="text"
+                          name="city"
+                          id="city"
+                          placeholder="Город(населенный пункт)*"
+                          required
+                  />
+              </div>
+              <div class="form_item">
+                  <label for="otr"></label>
+                  <input
+                          type="text"
+                          name="otr"
+                          id="otr"
+                          list="otr-list"
+                          placeholder="Отрасль*"
+                          required
+                  />
+                  <datalist id="otr-list">
+                      <option value="1"></option>
+                      <option value="2"></option>
+                      <option value="3"></option>
+                      <option value="4"></option>
+                  </datalist>
+              </div>
+              <div class="form_item">
+                  <label for="comment"></label>
+                  <textarea
+                          name="comment"
+                          id="comment"
+                          placeholder="Комментарий"
+                          required
+                  ></textarea>
+              </div>
+              <div class="user_agreement">
+                  <input type="checkbox" name="terms" />
+                  <span>
+                      <a href="" class="link-no-underline">Соглашаюсь</a> на обработку
+                  персональных данных в соответсвии с
+                  <a href="" class="link-no-underline"> Политикой конфиденциальности </a>
+                  </span>
+              </div>
+              <button type="submit" class="submit-btn">Отправить заявку</button>
+          </form>
+      </section>
   </main>
-  <footer>
-    <img src="" alt="" >
-    
+  <footer class="footer container">
+      <div class="footer1">
+          <div class="combo1">
+              <img src="./img/Logo-footer.svg" alt="SteelMetriXX" class="steel_footer">
+              <ul class="social_footer">
+                  <li class="social_footer_item1"><a href="" class="link-no-underline">Telegram</a></li>
+                  <li class="social_footer_item2"><a href="" class="link-no-underline">WhatsApp</a></li>
+                  <li class="social_footer_item3"><a href="" class="link-no-underline">YouTube</a></li>
+              </ul>
+          </div>
+          <div class="combo2">
+              <ul class="disk_footer">
+                  <li class="disk_footer_item"><a href="" class="link-no-underline">О компании</a></li>
+                  <li class="disk_footer_item"><a href="" class="link-no-underline">Производственные технологии</a></li>
+                  <li class="disk_footer_item"><a href="" class="link-no-underline">Выполненные проекты</a></li>
+                  <li class="disk_footer_item"><a href="" class="link-no-underline">Контакты</a></li>
+              </ul>
+          </div>
+          <div class="combo3">
+              <ul class="combo3-1">
+                  <li class="combo3-1_item"><a href="" class="link-no-underline">8 (800) 302-74-79</a></li>
+                  <li class="combo3-1_item"><p>Звонок по России бесплатный</p></li>
+              </ul>
+              <div class="combo1_hide">
+                  <ul class="social_footer_hide">
+                      <li class="social_footer_item1_hide"><a href="" class="link-no-underline">Telegram</a></li>
+                      <li class="social_footer_item2_hide"><a href="" class="link-no-underline">WhatsApp</a></li>
+                      <li class="social_footer_item3_hide"><a href="" class="link-no-underline">YouTube</a></li>
+                  </ul>
+              </div>
+              <ul class="combo3-2">
+                  <li class="combo3-2_item"><a href="">info@stelmetrixx.ru</a></li>
+                  <li class="combo3-2_item"><a href="" class="link-no-underline">Оренбургская область, Оренбургский район, поселок Пригородный, ул. Зерновая, 2</a></li>
+              </ul>
+          </div>
+
+      </div>
+
+      <div class="disk2">
+          <ul class="disk_footer2">
+              <li class="disk_footer_item2"><a href="" class="link-no-underline">О компании</a></li>
+              <li class="disk_footer_item2"><a href="" class="link-no-underline">Производственные технологии</a></li>
+              <li class="disk_footer_item2"><a href="" class="link-no-underline">Выполненные проекты</a></li>
+              <li class="disk_footer_item2"><a href="" class="link-no-underline">Контакты</a></li>
+          </ul>
+      </div>
+      <div class="footer2">
+          <ul class="last_footer">
+              <li class="last_footer_item"><a href="" class="link-no-underline policy-footer">Политика конфиденциальности</a> и <a href="" class="link-no-underline policy-footer">Техническая документация</a></li>
+              <li class="last_footer_item">© ООО “SteеlMetrixx” 2023</li>
+          </ul>
+      </div>
   </footer>
 </body>
 </html>
