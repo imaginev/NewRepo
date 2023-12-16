@@ -471,6 +471,13 @@ footer{
 
 }
 
+.grid-link {
+    text-decoration: none;
+    background-color: #ff5e1f;
+    color: #333333;
+    padding: 2px 6px 2px 6px;
+    border-radius: 3px;
+}
 .steel_footer{
     padding-top: 5rem;
     transition: 0.3s;
@@ -518,6 +525,15 @@ footer{
     background-position: left;
     font-size: 1.8rem;
 }
+
+.social_footer_item4{
+    margin-top: 2rem;
+    padding-left: 3rem;
+    background-repeat: no-repeat;
+    background-position: left;
+    font-size: 1.8rem;
+}
+
 .social_footer_item1_hide{
     background-image: url("../img/footer/telegram-footer.svg");
     padding-left: 3rem;
@@ -749,11 +765,7 @@ footer{
         font-weight: 400;
         padding-bottom: 4rem;
     }
-    /*.social_footer_item1_hide{*/
-    /*    display: flex;*/
-    /*    flex-direction: column;*/
-    /*    flex-wrap: wrap;*/
-    /*}*/
+
     .social_footer_hide{
         display: flex;
         flex-direction: column;
@@ -809,7 +821,6 @@ footer{
         justify-content: space-between;
         margin-left: 0;
         margin-right: 12.2rem;
-
     }
     .disk_footer{
         display: none;
